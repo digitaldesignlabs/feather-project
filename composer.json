@@ -1,0 +1,8 @@
+{
+    "name": "digitaldesignlabs/escher-project",
+    "description": "Project bootstrap file for Escher",
+    "type": "project",
+    "require": {
+        "digitaldesignlabs/escher": "^3.0@alpha"
+    }
+}
