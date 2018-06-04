@@ -2,7 +2,7 @@
 
 // Load Escher
 require "vendor/autoload.php";
-TDM\Escher\Escher::init();
+DDL\Feather\Feather::init();
 
 // If the URI finishes with a /, redirect to one without - unless its the root
 if ($_SERVER["DOCUMENT_URI"] !== "/" && substr($_SERVER["DOCUMENT_URI"], -1) === "/") {
@@ -11,7 +11,7 @@ if ($_SERVER["DOCUMENT_URI"] !== "/" && substr($_SERVER["DOCUMENT_URI"], -1) ===
 }
 
 // Set up the routing table
-$router = new TDM\Escher\Router();
+$router = new DDL\Feather\Router();
 
 // Sample route
 $router->map("/", function () {
@@ -23,7 +23,7 @@ $route = $router->route($_SERVER["REQUEST_METHOD"], $_SERVER["DOCUMENT_URI"]);
 
 // If we cannot route this request then send a 404
 if (is_callable($route) === NO) {
-    TDM\Escher\CurrentRequest::returnCode(404);
+    DDL\Feather\Response::returnCode(404);
     exit;
 }
 
@@ -31,5 +31,5 @@ if (is_callable($route) === NO) {
 try {
     echo call_user_func($route);
 } catch (\Exception $ignore) {
-    TDM\Escher\CurrentRequest::returnCode(500);
+    DDL\Feather\Response::returnCode(500);
 }

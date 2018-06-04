@@ -1,9 +1,9 @@
 {
-    "name": "digitaldesignlabs/escher-project",
-    "description": "Project bootstrap file for Escher",
+    "name": "digitaldesignlabs/feather-project",
+    "description": "Project bootstrap file for Feather",
     "type": "project",
     "license": "MIT",
     "require": {
-        "digitaldesignlabs/escher": "^3.0@alpha"
+        "digitaldesignlabs/feather": "^5.0"
     }
 }

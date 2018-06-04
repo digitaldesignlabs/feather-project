@@ -1,8 +1,8 @@
-Escher Project Bootstrap
-========================
+Feather Project Bootstrap
+=========================
 
-Get started with a new Escher project. Install with composer.
+Get started with a new Feather project. Install with composer.
 
 ```bash
-composer create-project digitaldesignlabs/escher-project project-name
+composer create-project digitaldesignlabs/feather-project project-name
 ```
