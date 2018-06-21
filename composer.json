@@ -4,6 +4,6 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "digitaldesignlabs/feather": "^5.0"
+        "digitaldesignlabs/feather": "^5.1"
     }
 }

@@ -2,7 +2,7 @@
 
 // Load Escher
 require "vendor/autoload.php";
-DDL\Feather\Feather::init();
+DDL\Feather\Feather::init(__DIR__);
 
 // If the URI finishes with a /, redirect to one without - unless its the root
 if ($_SERVER["DOCUMENT_URI"] !== "/" && substr($_SERVER["DOCUMENT_URI"], -1) === "/") {
